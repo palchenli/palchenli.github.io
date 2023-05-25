@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -30,7 +30,7 @@
                     <a class="link" href="#portfolio">Composition</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#testmonial">Testmonial</a>
+                    <a class="link" href="#testmonial">Reference</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#blog">Blog</a>
@@ -71,7 +71,7 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/man.png" class="about-img"
+                    <img src="assets/imgs/fig_banner_tvd.png" class="about-img"
                         alt="Landing page">
                 </div>
                 <div class="about-caption">
@@ -80,15 +80,15 @@
                     <p>
                         Art forms such as movies and television (TV) dramas are reflections of the real world, which
                         have attracted much attention from the multimodal learning community recently. However,
-                        existing corpora in this domain share three limitations: 1) annotated in a scene-oriented
-                        fashion, they ignore the coherence within plots; 2) their text lacks empathy and seldom
-                        mentions situational context; 3) their video clips fail to cover long-form relationship due to
-                        short duration.
-                        <br>To address these fundamental issues, using 1,106 TV drama episodes and 24,875 informative
+                        existing corpora in this domain share three limitations: <b>i.</b> annotated in a scene-oriented
+                        fashion, they ignore the coherence within plots; <b>ii.</b> their text lacks empathy and seldom
+                        mentions situational context; <b>iii.</b> their video clips fail to cover long-form relationship due to
+                        short duration. To address these fundamental issues, using 1,106 TV drama episodes and 24,875 informative
                         plot-focused sentences written by professionals, with the help of 449 human annotators, we
                         constructed TVD, the first plot-oriented multimodal dataset in the cinema domain.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download TVD</button>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="jump()">Download TVD</button>
+                    <script>function jump(){window.open("https://drive.google.com/drive/folders/1uVe9kndq_Nx7tKBwRY_rhXw675TOmUuI")}</script>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img"
+                        <img src="assets/imgs/fig_vision.png" class="portfolio-card-img"
                             alt="Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
@@ -115,19 +115,19 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
+                        <img class="portfolio-card-img" src="assets/imgs/fig_text.png" class="img-responsive rounded"
                             alt="Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h3>Text</h3>
-                                    <p class="font-weight-normal">Including plot texts and bullet screen comments</p>
+                                    <p class="font-weight-normal">Including plot texts, subtitles and bullet screen comments</p>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
+                        <img class="portfolio-card-img" src="assets/imgs/fig_metadata.png" class="img-responsive rounded"
                             alt="Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
@@ -147,72 +147,47 @@
             <p class="section-subtitle">What does data look like ?</p>
             <h6 class="section-title mb-6">Data Example</h6>
             <!-- row -->
+            <img src="assets/imgs/fig_overall.png" width=100% alt="Landing page">
             <div class="pricing-wrapper">
                 <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/scooter.svg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title">Vision</h6>
-                        <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p><i class="ti-close"></i></p>
-                            <p><i class="ti-close"></i></p>
-                        </div>
+                        <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/fig_vision_example.jpg" class="portfolio-card-img" alt="Landing page">
+                        </a>
+<!--                        <div class="pricing-card-list">-->
+                            <p align="left"> </p>
+                            <p align="left"><b>Description</b>: TVD takes screenshots of the video with an interval of one second and provides CLIP-based features.</p>
+                            <p align="left">&nbsp;&nbsp;&nbsp;</p>
+                            <p align="left">&nbsp;&nbsp;&nbsp;</p>
+<!--                        </div>-->
                     </div>
-                    <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>0.00/Month</span>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Example File</a>
                 </div>
                 <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title">Text</h6>
-                        <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p>accusamus laboriosam</p>
-                            <p><i class="ti-close"></i></p>
-                        </div>
+                        <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/fig_text_example.png" class="portfolio-card-img" alt="Landing page">
+                        </a>
+                         <p align="left"> </p>
+                         <p align="left"><b>Description</b>: TVD includes three types of text data: subtitles, plot and bullet screen comment. The subtitle is extracted from video, the plot text is crawlered from the network, and the bullet screen comment is obtained from Tencent video website.</p>
                     </div>
-                    <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>9.99/Month</span>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Example File</a>
                 </div>
                 <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/startup.svg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
                     <div class="pricing-card-body">
                         <h6 class="pricing-card-title">Metadata</h6>
-                        <div class="pricing-card-list">
-                            <p>accusamus reprehenderit</p>
-                            <p>provident dolorem </p>
-                            <p>quos neque</p>
-                            <p>fugiat quibusdam</p>
-                            <p>accusamus laboriosam</p>
-                            <p>inventore omnis</p>
-                        </div>
+                        <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/fig_vision_example.jpg" class="portfolio-card-img" alt="Landing page">
+                        </a>
+                         <p align="left"> </p>
+                         <p align="left"><b>Description</b>: TVD contains a large amount of metadata from Tencent video website, e.g., categories, tags, popularity, actors and so on.</p>
+                         <p align="left">&nbsp;&nbsp;&nbsp;</p>
+                         <p align="left">&nbsp;&nbsp;&nbsp;</p>
+
                     </div>
-                    <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>99.9/Month</span>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Example File</a>
                 </div>
 
             </div><!-- end of pricing wrapper -->
@@ -231,7 +206,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/pencil-case.svg"
+                            <img src="assets/imgs/classification.png"
                                 alt="Landing page"
                                 class="icon">
                             <h6 class="title">CLassification</h6>
@@ -242,7 +217,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/responsive.svg"
+                            <img src="assets/imgs/retrieval.png"
                                 alt="Landing page"
                                 class="icon">
                             <h6 class="title">Retrieval</h6>
@@ -253,7 +228,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/toolbox.svg"
+                            <img src="assets/imgs/generation.png"
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
                                 class="icon">
                             <h6 class="title">Generation</h6>
@@ -293,45 +268,7 @@
 <!--        </div> &lt;!&ndash; end of container &ndash;&gt;-->
 <!--    </section> &lt;!&ndash; end of section &ndash;&gt;-->
 
-    <!-- testimonial section -->
-    <section class="section" id="testmonial">
-        <div class="container text-center">
-            <p class="section-subtitle">What Think Client About Me ?</p>
-            <h6 class="section-title mb-6">Testmonial</h6>
 
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
-                                adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
-                                adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- end of container -->
-    </section> <!-- end of testimonial section -->
 
     <!-- blog section -->
     <section class="section" id="blog">
@@ -396,11 +333,57 @@
         </div><!-- end of container -->
     </section><!-- end of blog section -->
 
+        <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            <p class="section-subtitle">Reference</p>
+            <h6 class="section-title mb-6">Bibtex</h6>
+
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/bibtex.png" class="testimonial-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">{</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@article{li2023taggpt,</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title={TagGPT: Large Language Models are Zero-shot Multimodal Taggers},</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author={Li, Chen and Ge, Yixiao and Mao, Jiayong and Li, Dian and Shan, Ying},&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2304.03022},</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year={2023}</br>
+                            }</p>
+<!--                            <h6 class="testimonial-card-title">Emily Reb</h6>-->
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="col-md-6">-->
+<!--                    <div class="testimonial-card">-->
+<!--                        <div class="testimonial-card-img-holder">-->
+<!--                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img"-->
+<!--                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">-->
+<!--                        </div>-->
+<!--                        <div class="testimonial-card-body">-->
+<!--                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing-->
+<!--                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis-->
+<!--                                adipisci nihil.</p>-->
+<!--                            <h6 class="testimonial-card-title">Emily Reb</h6>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+
     <!-- contact section -->
     <section class="section" id="contact">
         <div class="container text-center">
             <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
+            <h6 class="section-title mb-5">Contact Us</h6>
             <!-- contact form -->
             <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
@@ -427,16 +410,15 @@
         <footer class="footer">
             <p class="mb-0">Copyright
                 <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    href="http://www.devcrud.com">DevCRUD</a> Distribution <a
-                    href="https://themewagon.com">ThemeWagon</a>
+                    href="https://arc.tencent.com/en/index">ARC LAB</a> Distribution
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>-->
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>-->
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>-->
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>-->
+<!--                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>-->
+                <a href="javascript:void(0)" class="link"><i class="ti-github"></i></a>
             </div>
         </footer>
     </div> <!-- end of page footer -->
