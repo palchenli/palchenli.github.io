@@ -30,10 +30,10 @@
                     <a class="link" href="#portfolio">Composition</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#testmonial">Reference</a>
+                    <a class="link" href="#blog">Blog</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#blog">Blog</a>
+                    <a class="link" href="#testmonial">Reference</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#contact">Contact</a>
@@ -158,11 +158,8 @@
 <!--                        <div class="pricing-card-list">-->
                             <p align="left"> </p>
                             <p align="left"><b>Description</b>: TVD takes screenshots of the video with an interval of one second and provides CLIP-based features.</p>
-                            <p align="left">&nbsp;&nbsp;&nbsp;</p>
-                            <p align="left">&nbsp;&nbsp;&nbsp;</p>
 <!--                        </div>-->
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Example File</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-body">
@@ -173,7 +170,6 @@
                          <p align="left"> </p>
                          <p align="left"><b>Description</b>: TVD includes three types of text data: subtitles, plot and bullet screen comment. The subtitle is extracted from video, the plot text is crawlered from the network, and the bullet screen comment is obtained from Tencent video website.</p>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Example File</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-body">
@@ -183,16 +179,19 @@
                         </a>
                          <p align="left"> </p>
                          <p align="left"><b>Description</b>: TVD contains a large amount of metadata from Tencent video website, e.g., categories, tags, popularity, actors and so on.</p>
-                         <p align="left">&nbsp;&nbsp;&nbsp;</p>
-                         <p align="left">&nbsp;&nbsp;&nbsp;</p>
-
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Example File</a>
                 </div>
 
             </div><!-- end of pricing wrapper -->
         </div> <!-- end of container -->
+
+        <style>.example{position: relative;
+        top: 50%;
+        left: 46%}</style>
+        <div class="example"><a href="#" class="btn btn-primary mt-3 pricing-card-btn" onclick="jump_1()">Example File</a></div>
+        <script>function jump_1(){window.open("https://github.com/palchenli/TVD/tree/main/example")}</script>
     </section><!-- end of pricing section -->
+
 
 
 
@@ -274,61 +273,64 @@
     <section class="section" id="blog">
         <!-- container -->
         <div class="container text-center">
-            <p class="section-subtitle">Recent Posts?</p>
-            <h6 class="section-title mb-6">Blog</h6>
+            <p class="section-subtitle">How to use TVD?</p>
+            <h6 class="section-title mb-6">Baseline</h6>
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/img-1.jpg" class="blog-card-img"
+                    <img src="assets/imgs/fig_framework.png" class="blog-card-img"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="blog-card-body">
-                    <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
+                    <h6 class="blog-card-title">Benchmark</h6>
 
-                        <p class="blog-card-caption">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit
-                            delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium
-                            neque numquam mollitia modi quasi distinctio.</p>
+<!--                        <p class="blog-card-caption">-->
+<!--                            <a href="#">By: Admin</a>-->
+<!--                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>-->
+<!--                            <a href="#"><i class="ti-comment"></i> 123</a>-->
+<!--                        </p>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit-->
+<!--                            delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium-->
+<!--                            neque numquam mollitia modi quasi distinctio.</p>-->
 
-                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>
-                        </p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis
-                            cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+<!--                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>-->
+<!--                        </p>-->
+<!--                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis-->
+<!--                            cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>-->
 
-                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                        As shown in this figure, aiming to serve as a future baseline, our algorithm first adopts the most popular text encoder, BERT, for text input, and a very promising vision encoder, ViT, for image and video.
+                    The vanilla <b>METER</b> does not support video input, so we employ the approach and add a signal converter which uniformly samples four frames from each clip. Then, the encoded features are fed to two separate co-attention fusion modules, which respectively produce embeddings for image-text and video-text multimodal learning.
+
+                        <a href="#" class="blog-card-link" onclick="jump_1()">Refer to the details and code <i class="ti-angle-double-right"></i></a>
                 </div>
             </div><!-- end of blog wrapper -->
 
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/img-2.jpg" class="blog-card-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Explicabo illo</h6>
+<!--            &lt;!&ndash; blog-wrapper &ndash;&gt;-->
+<!--            <div class="blog-card">-->
+<!--                <div class="blog-card-header">-->
+<!--                    <img src="assets/imgs/img-2.jpg" class="blog-card-img"-->
+<!--                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">-->
+<!--                </div>-->
+<!--                <div class="blog-card-body">-->
+<!--                    <h5 class="blog-card-title">Explicabo illo</h6>-->
 
-                        <p class="blog-card-caption">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
-                        </p>
+<!--                        <p class="blog-card-caption">-->
+<!--                            <a href="#">By: Admin</a>-->
+<!--                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>-->
+<!--                            <a href="#"><i class="ti-comment"></i> 264</a>-->
+<!--                        </p>-->
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim,
-                            vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro
-                            quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto
-                            omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae?
-                            Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non
-                            dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus
-                            eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim,-->
+<!--                            vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro-->
+<!--                            quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto-->
+<!--                            omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae?-->
+<!--                            Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non-->
+<!--                            dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus-->
+<!--                            eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>-->
 
-                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
+<!--                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>-->
+<!--                </div>-->
+<!--            </div>&lt;!&ndash; end of blog wrapper &ndash;&gt;-->
 
         </div><!-- end of container -->
     </section><!-- end of blog section -->
@@ -352,7 +354,7 @@
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@article{li2023taggpt,</br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title={TagGPT: Large Language Models are Zero-shot Multimodal Taggers},</br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author={Li, Chen and Ge, Yixiao and Mao, Jiayong and Li, Dian and Shan, Ying},&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2304.03022},</br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year={2023}</br>
