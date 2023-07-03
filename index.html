@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with TVD landing page.">
     <meta name="author" content="Chen Li">
-    <title>TencentARC-TVD</title>
+    <title>TencentARC-PTVD</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
@@ -18,7 +18,7 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">Tencent ARC</a>
+            <a class="logo" href="#">Tencent ARC & Tencent Video</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -56,11 +56,12 @@
         <div class="header-content container">
             <h1 class="header-title">
                 <span class="up">HI!</span>
-                <span class="down">Welcome to TVD</span>
+                <span class="down">Welcome to PTVD</span>
             </h1>
             <p class="header-subtitle">A Large-Scale Multimodal Plot-Oriented Story Understanding Dataset</p>
 
-            <button class="btn btn-primary">Visit Our Paper</button>
+            <button class="btn btn-primary" onclick="jump_paper()">Visit Our Paper</button>
+            <script>function jump_paper(){window.open("https://arxiv.org/pdf/2306.14644.pdf")}</script>
         </div>
     </header><!-- end of page header -->
 
@@ -72,11 +73,11 @@
             <div class="about">
                 <div class="about-img-holder">
                     <img src="assets/imgs/fig_banner_tvd.png" class="about-img"
-                        alt="Landing page">
+                         alt="Landing page">
                 </div>
                 <div class="about-caption">
-                    <p class="section-subtitle">What is TVD ?</p>
-                    <h2 class="section-title mb-3">About TVD</h2>
+                    <p class="section-subtitle">What is PTVD ?</p>
+                    <h2 class="section-title mb-3">About PTVD</h2>
                     <p>
                         Art forms such as movies and television (TV) dramas are reflections of the real world, which
                         have attracted much attention from the multimodal learning community recently. However,
@@ -85,10 +86,12 @@
                         mentions situational context; <b>iii.</b> their video clips fail to cover long-form relationship due to
                         short duration. To address these fundamental issues, using 1,106 TV drama episodes and 24,875 informative
                         plot-focused sentences written by professionals, with the help of 449 human annotators, we
-                        constructed TVD, the first plot-oriented multimodal dataset in the cinema domain.
+                        constructed PTVD, the first plot-oriented multimodal dataset in the cinema domain.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="jump()">Download TVD</button>
-                    <script>function jump(){window.open("https://drive.google.com/drive/folders/1uVe9kndq_Nx7tKBwRY_rhXw675TOmUuI")}</script>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="jump_g()">Download from google</button>
+                    <script>function jump_g(){window.open("https://drive.google.com/drive/folders/1uVe9kndq_Nx7tKBwRY_rhXw675TOmUuI")}</script>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="jump_z()">Download from zenodo</button>
+                    <script>function jump_z(){window.open("https://zenodo.org/record/8012075")}</script>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -97,14 +100,14 @@
     <!-- portfolio section -->
     <section class="section" id="portfolio">
         <div class="container text-center">
-            <p class="section-subtitle">What does TVD have ?</p>
+            <p class="section-subtitle">What does PTVD have ?</p>
             <h6 class="section-title mb-6">Dataset Composition</h6>
             <!-- row -->
             <div class="row">
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
                         <img src="assets/imgs/fig_vision.png" class="portfolio-card-img"
-                            alt="Landing page">
+                             alt="Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h3>Vision</h3>
@@ -116,7 +119,7 @@
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/fig_text.png" class="img-responsive rounded"
-                            alt="Landing page">
+                             alt="Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h3>Text</h3>
@@ -128,7 +131,7 @@
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/fig_metadata.png" class="img-responsive rounded"
-                            alt="Landing page">
+                             alt="Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h3>Metadata</h3>
@@ -199,7 +202,7 @@
     <!-- service section -->
     <section class="section" id="service">
         <div class="container text-center">
-            <p class="section-subtitle">What can TVD Do ?</p>
+            <p class="section-subtitle">What can PTVD Do ?</p>
             <h6 class="section-title mb-6">Tasks</h6>
             <!-- row -->
             <div class="row">
@@ -274,13 +277,13 @@
     <section class="section" id="blog">
         <!-- container -->
         <div class="container text-center">
-            <p class="section-subtitle">How to use TVD?</p>
+            <p class="section-subtitle">How to use PTVD?</p>
             <h6 class="section-title mb-6">Baseline</h6>
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/fig_framework.png" class="blog-card-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/fig_model.png" class="blog-card-img"
+                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="blog-card-body">
                     <h6 class="blog-card-title">Benchmark</h6>
@@ -348,17 +351,17 @@
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
                             <img src="assets/imgs/bibtex.png" class="testimonial-card-img"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         </div>
                         <div class="testimonial-card-body">
                             <p class="testimonial-card-subtitle">{</br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@article{li2023taggpt,</br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title={TagGPT: Large Language Models are Zero-shot Multimodal Taggers},</br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author={====================================================================},&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2304.03022},</br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year={2023}</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@article{li2023ptvd,</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title={PTVD: A Large-Scale Plot-Oriented Multimodal Dataset Based on Television Dramas},</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author={Chen Li, Xutan Peng, Teng Wang, Yixiao Ge, Mengyang Liu, Xuyuan Xu, Yexin Wang, Ying Shan},
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+<!--                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2304.03022},</br>-->
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year={2023},</br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eprint={2306.14644}</br>
                             }</p>
 <!--                            <h6 class="testimonial-card-title">Emily Reb</h6>-->
                         </div>
